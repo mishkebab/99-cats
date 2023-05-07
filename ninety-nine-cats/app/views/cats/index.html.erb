@@ -1,0 +1,7 @@
+<p> "there are cats!"</p> 
+<% @cats.each do |cat| %>
+    <ul>
+        <%= render 'catrender', cat: cat %>
+        <a href="<%= cat_url(cat) %>">Link to cat</a>
+    </ul>
+<% end %>
